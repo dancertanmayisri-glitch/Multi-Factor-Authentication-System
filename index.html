@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Factor Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>MFA System</h1>
+    <p>Secure Login Authentication</p>
+
+    <div id="login">
+        <h2>Login</h2>
+
+        <input type="text" id="username"
+        placeholder="Enter Username">
+
+        <input type="password" id="password"
+        placeholder="Enter Password">
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="otp" style="display:none;">
+        <h2>OTP Verification</h2>
+
+        <p id="otpMessage"></p>
+
+        <input type="text" id="otpInput"
+        placeholder="Enter OTP">
+
+        <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <div id="success" style="display:none;">
+        <h2>Login Successful!</h2>
+        <p>Your identity is verified.</p>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
